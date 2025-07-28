@@ -1,0 +1,14 @@
+# .github/workflows/hello-ci.yml
+name: CI Pertamaku
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Halo Dunia!
+        run: echo "Selamat datang di CI/CD pipeline 🚀"
